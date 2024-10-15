@@ -1,0 +1,65 @@
+{
+    "routes": [
+      {
+        "route": "/login",
+        "serve": "/index.html",
+        "statusCode": 200
+      },
+      {
+        "route": "/homePage",
+        "serve": "/index.html",
+        "statusCode": 200
+      },
+      {
+        "route": "/find-voter",
+        "serve": "/index.html",
+        "statusCode": 200
+      },
+      {
+        "route": "/survey",
+        "serve": "/index.html",
+        "statusCode": 200
+      },
+      {
+        "route": "/admin",
+        "serve": "/index.html",
+        "statusCode": 200
+      },
+      {
+        "route": "/admin/voters",
+        "serve": "/index.html",
+        "statusCode": 200
+      },
+      {
+        "route": "/admin/constituency",
+        "serve": "/index.html",
+        "statusCode": 200
+      },
+      {
+        "route": "/admin/booth",
+        "serve": "/index.html",
+        "statusCode": 200
+      },
+      {
+        "route": "/admin/survey-review",
+        "serve": "/index.html",
+        "statusCode": 200
+      },
+      {
+        "route": "/admin/shareImage",
+        "serve": "/index.html",
+        "statusCode": 200
+      },
+      {
+        "route": "/admin/user",
+        "serve": "/index.html",
+        "statusCode": 200
+      },
+      {
+        "route": "/*",
+        "serve": "/index.html",
+        "statusCode": 200
+      }
+    ]
+  }
+  
