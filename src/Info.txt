@@ -1,0 +1,9 @@
+
+
+
+
+for share button
+npm install react-copy-to-clipboard
+
+for react to make https calls to servers
+npm intall axios
