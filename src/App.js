@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css'; // Include your CSS
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // Updated import
+import { HashRouter as Router, Route, Routes } from 'react-router-dom'; // Updated import
 import Login from './components/Login';
 import HomePage from './components/HomePage';
 import FindVoter from './components/FindVoter';

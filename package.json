@@ -1,6 +1,7 @@
 {
   "name": "election-app",
   "version": "0.1.0",
+  "homepage": ".",
   "private": true,
   "dependencies": {
     "@heroicons/react": "^2.1.5",
