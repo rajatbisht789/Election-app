@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css'; // Include your CSS
-import { HashRouter as Router, Route, Routes } from 'react-router-dom'; // Updated import
+import { HashRouter as Router, Route, Routes, Navigate } from 'react-router-dom'; // Updated import
 import Login from './components/Login';
 import HomePage from './components/HomePage';
 import FindVoter from './components/FindVoter';
@@ -31,7 +31,8 @@ const App = () => {
         <Route path="/survey" element={<ProtectedRoute><Survey /></ProtectedRoute>} />
 
         {/* Admin Dashboard */}
-        <Route path="/admin" element={<AdminDashboard />}>
+        <Route path="/admin" element={<ProtectedRoute><AdminDashboard /></ProtectedRoute>}>
+        <Route index element={<Navigate to="/admin/user" />} /> {/* Redirect to Users */}
           <Route path="voters" element={<Voters />} />
           <Route path="constituency" element={<Constituency />} />
           <Route path="booth" element={<Booth />} />

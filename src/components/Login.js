@@ -29,8 +29,11 @@ const Login = () => {
       
       // If login is successful, trigger any actions you want, e.g., save token, redirect, etc.
       if (response.status === 200) {
-        const token = response.data;  // Assuming the token is returned from the API
-        localStorage.setItem('token', token);  // Save the token in localStorage (optional) 
+        const data = response.data;  // Assuming the token is returned from the API
+        console.log(data)
+        localStorage.setItem('token', data.token);  // Save the token in localStorage (optional) 
+        localStorage.setItem('isAdmin', data.admin);
+        
         setError('');
         navigate('/HomePage');
       } else {

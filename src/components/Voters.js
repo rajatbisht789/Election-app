@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
 import * as XLSX from 'xlsx'; // Import xlsx
+import LogoutButton from './LogoutButton';
 
 const VoterPage = () => {
   const apiUrl = process.env.REACT_APP_API_URL;
@@ -51,6 +52,7 @@ const VoterPage = () => {
 
   return (
     <div className="p-6">
+    <LogoutButton/>
       <h1 className="text-2xl font-bold mb-4">Voter Management</h1>
       {/* Flex container for Export and Upload buttons */}
       <div className="flex flex-col md:flex-row justify-between mb-4">

@@ -11,7 +11,6 @@ const Survey = () => {
         axios.get(`${apiUrl}/api/survey/questions`).then(
             response => {
                 setQuestions(response.data);
-                console.log(response.data)
             }
         );
     }, []);
@@ -42,7 +41,6 @@ const Survey = () => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        console.log(answers)
         // // Send answers to Spring Boot application
         // axios.post(`${apiUrl}/api/survey/submit`, answers)
         //     .then(response => {

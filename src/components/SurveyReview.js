@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import LogoutButton from './LogoutButton';
 
 const SurveyReview = () => {
   const surveyData = [
@@ -13,6 +14,7 @@ const SurveyReview = () => {
 
   return (
     <div className="max-w-3xl mx-auto p-6 bg-white rounded-lg shadow-md">
+      <LogoutButton/>
       <h1 className="text-3xl font-bold mb-6 text-center">Survey Review</h1>
       <div className="space-y-4">
         {surveyData.map((item, index) => (

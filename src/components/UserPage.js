@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
 import * as XLSX from 'xlsx'; // Import the xlsx library
+import LogoutButton from './LogoutButton';
 
 const UserPage = () => {
   const apiUrl = process.env.REACT_APP_API_URL;
@@ -102,6 +103,7 @@ const UserPage = () => {
 
   return (
     <div className="p-6">
+    <LogoutButton/>
       <h1 className="text-xl font-bold mb-4">User Management</h1>
       
       <form onSubmit={handleSubmit} className="mb-4 grid grid-cols-1 sm:grid-cols-2 gap-4">

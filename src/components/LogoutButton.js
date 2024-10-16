@@ -9,7 +9,7 @@ const LogoutButton = () => {
     const handleLogout = () => {
         // Clear any authentication token or user data stored in localStorage
         localStorage.removeItem('token');
-        
+        localStorage.removeItem('isAdmin');
         // Redirect to login page
         navigate('/login');
     };

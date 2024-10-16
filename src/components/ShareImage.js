@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import LogoutButton from './LogoutButton';
 
 const ShareImage = () => {
     const [selectedImage, setSelectedImage] = useState(null);
@@ -17,6 +18,7 @@ const ShareImage = () => {
 
     return (
         <div className="flex flex-col items-center justify-center h-screen p-6 bg-gray-100">
+            <LogoutButton/>
             <h1 className="text-2xl font-bold mb-4">Share Your Image</h1>
             <input
                 type="file"
